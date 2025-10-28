@@ -1,0 +1,63 @@
+# ============================================
+# Laravel + Docker + GitHub Actions .gitignore
+# ============================================
+
+# Laravel vendor & environment files
+/vendor
+/node_modules
+/.env
+/.env.*
+/.env.example.local
+
+# Laravel storage (cache, logs, sessions)
+/storage/*.key
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+/storage/app/public/*
+!/storage/app/public/.gitignore
+
+# Composer & npm logs
+composer.lock
+package-lock.json
+npm-debug.log
+yarn-error.log
+
+# Docker
+/docker-data
+*.pid
+*.seed
+*.tar
+*.log
+*.sql
+*.env.docker
+*.env.local
+
+# OS-specific
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# GitHub / CI Cache
+.github/workflows/cache/
+coverage/
+.phpunit.result.cache
+
+# Node & build output
+/public/hot
+/public/storage
+/public/mix-manifest.json
+
+# Redis dump file
+dump.rdb
+
+# Temporary files
+*.tmp
+*.temp
